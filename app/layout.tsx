@@ -28,6 +28,10 @@ export default function RootLayout({
   return (
     <>
       <Script src="https://telegram.org/js/telegram-web-app.js" />
+      <script
+        src="https://richinfo.co/richpartners/in-page/js/richads-ob.js?pubid=943970&siteid=352382"
+        async
+      ></script>
       <html lang="en">
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}

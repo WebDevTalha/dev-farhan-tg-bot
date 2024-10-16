@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@metamask/sdk-react-ui": "^0.29.2",
     "@ton/core": "^0.58.1",
     "@tonconnect/sdk": "^3.0.5",
     "@tonconnect/ui-react": "^2.0.9",
