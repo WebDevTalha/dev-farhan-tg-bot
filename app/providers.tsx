@@ -5,7 +5,7 @@ import { TonConnectUIProvider } from "@tonconnect/ui-react";
 
 import { MetaMaskUIProvider } from "@metamask/sdk-react-ui";
 // import { manifestUrl } from "./data";
-declare let window: any;
+// declare let window: any;
 
 export default function Providers({ children }: { children: React.ReactNode }) {
   const [mounted, setMounted] = React.useState(false);
@@ -17,7 +17,7 @@ export default function Providers({ children }: { children: React.ReactNode }) {
         sdkOptions={{
           dappMetadata: {
             name: "DevFarhansBot",
-            url: window.location.href,
+            url: typeof window !== "undefined" ? window.location.href : "",
           },
           infuraAPIKey: process.env.INFURA_API_KEY,
           // Other options
